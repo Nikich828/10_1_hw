@@ -1,0 +1,27 @@
+ vrrp_script check_nginx {
+	script "/usr/local/bin/check_nginx.sh"
+	interval 3
+	timeout 1
+	rise 1
+	fall 1
+}
+ 
+vrrp_instance VI_1 {
+	state BACKUP
+	interface eth0
+    virtual_router_id 100
+	priority 200
+	advert_int 1
+ 
+	unicast_peer {
+        10.128.0.19
+	}
+ 
+    virtual_ipaddress {
+        10.128.0.100/24
+	}
+ 
+	track_script {
+        check_nginx
+	}
+}
