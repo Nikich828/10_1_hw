@@ -46,7 +46,7 @@
 
 Проверяем на какой из двух машин висит виртальный айпи.
 ![alt text](https://github.com/Nikich828/10_1_hw/blob/main/2.jpg)
-![alt text](hhttps://github.com/Nikich828/10_1_hw/blob/main/3.jpg)
+![alt text](https://github.com/Nikich828/10_1_hw/blob/main/3.jpg)
 Имитируем недоступность порта остановкой работы процесса
 ![alt text](https://github.com/Nikich828/10_1_hw/blob/main/4.jpg)
 Вилим что айпи переместился на другую машину
